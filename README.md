@@ -19,3 +19,13 @@ require_once 'path/to/simplephpcounter.php';
 $counter = new simplephpcounter/Hits('index');
 echo "<p>Page hits: ".$counter->hits()."</p>";
 ```
+
+(Replace 'index' with whatever you want to call that page's counter.)
+
+## License
+
+Basically, feel free to use/modify as you want, but it would be nice to point
+people to the [GitHub repo](https://github.com/nogdog/simplephpcounter)
+
+See the LICENSE file in this directory for the official verbiage.
+
