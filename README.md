@@ -6,7 +6,7 @@ entirely file-base, with no database connection needed.
 ## Installation
 
 All you need is the simplephpcounter.php file. Put it anywhere you would like
-in your application directory structure. Be default, it expects there to be
+in your application directory structure. By default, it expects there to be
 a writable (by the web server) directory named "hits" in the same directory. If
 you don't want it there, you can override it via the second (optional)
 constructor parameter. (You could just hard-code it into the class parameter
