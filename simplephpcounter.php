@@ -9,6 +9,9 @@ class Hits
 
   public function __construct($name, $dir=null)
   {
+    if(basename($name) !== $name) {
+      throw new \Exception("Invalid file name '$name'");
+    }
     if(!empty($dir)) {
       $this->hitDir = $dir;
     }
@@ -29,7 +32,7 @@ class Hits
         ($hits = trim(file_get_contents($file)) + 1),
         LOCK_EX
       ) == false) {
-      throw new Exception(__FILE__.': unable to write to '.$file);
+      throw new \Exception(__FILE__.': unable to write to '.$file);
     }
     return $hits;
   }
