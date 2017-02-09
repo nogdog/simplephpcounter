@@ -1,7 +1,7 @@
 # Simple PHP Hit counter
 
 This package provides page hit counter data as simply as possible. It is
-entirely file-base, with no database connection needed.
+entirely file-based, with no database connection needed.
 
 ## Installation
 
@@ -16,7 +16,7 @@ if you prefer.)
 
 ```
 require_once 'path/to/simplephpcounter.php';
-$counter = new simplephpcounter/Hits('index');
+$counter = new simplephpcounter\Hits('index');
 echo "<p>Page hits: ".$counter->hits()."</p>";
 ```
 
