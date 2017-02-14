@@ -29,7 +29,7 @@ class Hits
     if(
       file_put_contents(
         $file,
-        ($this->hits = trim(file_get_contents($file)) + 1),
+        ($hits = trim(file_get_contents($file)) + 1),
         LOCK_EX
       ) == false) {
       throw new \Exception(__FILE__.': unable to write to '.$file);
